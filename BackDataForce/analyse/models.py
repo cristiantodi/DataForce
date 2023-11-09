@@ -5,7 +5,7 @@ from users.models import User
 
 class analizys(models.Model):
     uniqueCode  =   models.CharField(max_length=200, blank=True, null=True) 
-    user        =   models.ForeignKey(User, blank=True, null=True, on_delete=models.CASCADE)
+    user        =   models.ForeignKey(User, blank=True, null=True, on_delete=models.DO_NOTHING)
     initiated   =   models.DateField(blank=True, null=True)
     termination =   models.DateField(blank=True, null=True)
     result      =   models.IntegerField(blank=True, null=True)

@@ -23,6 +23,7 @@ from drf_yasg import openapi
 from analyse.api.router import router_analyse
 from inventoryReport.api.router import router_inventory
 from report.api.router import router_report
+from verificationreport.api.router import router_verificationreport
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -46,4 +47,6 @@ urlpatterns = [
     path('api/', include(router_analyse.urls)),
     path('api/', include(router_inventory.urls)),
     path('api/', include(router_report.urls)),
+    path('api/', include(router_verificationreport.urls)),
+
 ]

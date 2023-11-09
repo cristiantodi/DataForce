@@ -15,13 +15,13 @@ class reportsAdmin(admin.ModelAdmin):
                     "architecture",
                     "platform",
                     "uniqueDeviceId",
-                    "ProductName",
+                    "productName",
                     "maker",
                     "model",
-                    "ProductCode",
+                    "productCode",
                     "serial_so",
                     "code_so",
                     "model_id",
-                    "computerHash",
-                    "hashTeam"
+                    "computerMD",
+                    "conputerSHA",
                 ]

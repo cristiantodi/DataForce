@@ -14,13 +14,13 @@ class reportSerializer(serializers.ModelSerializer):
                     "architecture",
                     "platform",
                     "uniqueDeviceId",
-                    "ProductName",
+                    "productName",
                     "maker",
                     "model",
-                    "ProductCode",
+                    "productCode",
                     "serial_so",
                     "code_so",
                     "model_id",
-                    "computerHash",
-                    "hashTeam"
+                    "computerMD",
+                    "conputerSHA",
                 ]
